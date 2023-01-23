@@ -16,6 +16,12 @@
     </div>
   </body>
   <script>
-    //code here
+    function update() {
+      const textarea = document.getElementById("input");
+      const outputText = document.querySelector("h3");
+      textarea.addEventListener("input", (e) => {
+        outputText.innerText = `Your Text : ${e.target.value}`;
+      });
+    }
   </script>
 </html>
