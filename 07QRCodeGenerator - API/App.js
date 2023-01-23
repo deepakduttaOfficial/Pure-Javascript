@@ -9,7 +9,7 @@ function generateQRCode() {
   let website = document.getElementById("input").value;
   div.innerHTML = "";
   if (website) {
-    new generateQRCode(div, {
+    new QRCode(div, {
       text: website,
       width: 128,
       height: 128,
