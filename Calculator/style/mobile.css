@@ -1,0 +1,21 @@
+@media screen and (max-width: 540px) {
+  .calculatorContainer {
+    width: 300px;
+    height: 500px;
+  }
+  .calculatorMainContent {
+    width: 260px;
+  }
+  .resultDisplay {
+    margin-top: 50px;
+  }
+  .calulatorButtonContainer {
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: space-between;
+  }
+  .btn {
+    width: 55px;
+    height: 35px;
+  }
+}

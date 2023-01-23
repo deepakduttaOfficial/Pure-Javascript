@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
 </head>
-<body>
-   
-    <div class="container">
-        <form name="form">
-            <input class="textview" name="textview">
-        </form>
-            <table>
-                <tr>
-                        <td><input class="allclearButton" type="button" value="AC" onclick="clean()"></td>
-                        <td><input class="button" type="button" value="C" onclick="back()"></td>
-                        <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
-                        <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
-                </tr>
-                <tr>
-                        <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
-                        <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
-                        <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
-                        <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
-                 </tr>
-                 <tr>
-                        <td><input class="button"  type="button" value="4" onclick=insert(4)></td>
-                        <td><input class="button" type="button" value="5" onclick=insert(5)></td>
-                        <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
-                        <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
-                </tr>
-                 <tr>
-                        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
-                        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
-                        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
-                        <td rowspan="2"><input class="equalButton" type="button" value="=" onclick=equals()></td>
-              </tr>
-                <tr>
-                       <td><input class="button" type="button" value="%" onclick="insert('%')"></td>
-                       <td><input class="button" type="button" value="0" onclick="insert('0')"></td>
-                       <td><input class="button" type="button" value="." onclick="insert('.')"> </td>
-                        
-                </tr>
 
-            </table>
+<body>
+    <div id="container">
+        <div class="calculatorContainer">
+
+            <div class="calculatorMainContent">
+                <span id="online" class="blink-down"></span>
+                <div class="resultDisplay">
+                    <div class="displayBox">
+                        <h2 id="question">
+                            </h3>
+                            <h4 id="answer"></h4>
+                    </div>
+                </div>
+
+                <div class="calulatorButtonContainer">
+                    <button class="btn oparate" onclick="clean()">AC</button>
+                    <button class="btn oparate" onclick="back()">C</button>
+                    <button class="btn disable">()</button>
+                    <button class="btn oparate" onclick="getValue('/')">/</button>
+                    <button class="btn value" onclick="getValue(7)">7</button>
+                    <button class="btn value" onclick="getValue(8)">8</button>
+                    <button class="btn value" onclick="getValue(9)">9</button>
+                    <button class="btn oparate" onclick="getValue('*')">*</button>
+                    <button class="btn value" onclick="getValue(4)">4</button>
+                    <button class="btn value" onclick="getValue(5)">5</button>
+                    <button class="btn value" onclick="getValue(6)">6</button>
+                    <button class="btn oparate" onclick="getValue('-')">-</button>
+                    <button class="btn value" onclick="getValue(1)">1</button>
+                    <button class="btn value" onclick="getValue(2)">2</button>
+                    <button class="btn value" onclick="getValue(3)">3</button>
+                    <button class="btn oparate" onclick="getValue('+')">+</button>
+                    <button class="btn value" onclick="getValue('%')">%</button>
+                    <button class="btn value" onclick="getValue(0)">0</button>
+                    <button class="btn value" onclick="getValue('.')">.</button>
+                    <button class="btn oparate" onclick="equal()"> = </button>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
+<script src="./js/index.js"></script>
+
 </html>

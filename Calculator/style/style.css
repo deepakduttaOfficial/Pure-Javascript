@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --oparate-bgColor: #609acf;
+  --desable-bgColor: #8b8b8b;
+  --btn-bgColor: #7692b5c2;
+  --question-Color: #0e253a;
+  --answer-Color: #595a5c;
+}
+
+#container {
+  width: 100%;
+}
+/* Little style  */
+
+#online {
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.blink-up {
+  background-color: #822626;
+}
+.blink-down {
+  background-color: #f58e8e;
+}
+
+/* Display  */
+.calculatorContainer {
+  background-color: #cadfee;
+  width: 400px;
+  height: 593px;
+  margin: 17px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.calculatorMainContent {
+  width: 333.61px;
+}
+
+.resultDisplay {
+  background-color: rgb(37, 129, 169, 29%);
+  width: 100%;
+  height: 137.21px;
+  border-radius: 4px;
+  margin-top: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.displayBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#question {
+  color: var(--question-Color);
+  font-size: 42px;
+  font-weight: 500;
+  transition: 0.9s;
+}
+#answer {
+  color: var(--answer-Color);
+  font-size: 30px;
+  font-weight: 400;
+  transition: 0.9s;
+}
+
+/* Button  */
+.calulatorButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 65px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: var(--btn-bgColor);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.oparate {
+  background-color: var(--oparate-bgColor);
+}
+
+.disable {
+  background-color: var(--desable-bgColor);
+  cursor: not-allowed;
+}
+
+.oparate:hover,
+.oparate:focus {
+  background-color: #5184b4;
+}
+
+.value:hover,
+.value:focus {
+  background-color: #7692b5;
+}
